@@ -268,7 +268,7 @@ Page.template = (v) => (
           style={{ height: '72px', display: 'flex', alignItems: 'center', gap: '20px' }}
         >
           <a
-            href="/"
+            href="/v1/"
             aria-label="Jobseeker Company home"
             style={{ display: 'flex', alignItems: 'center', flex: 'none' }}
           >
@@ -505,7 +505,7 @@ Page.template = (v) => (
               </div>
             </div>
             <div className="nitem">
-              <a className="navlink nbtn" href="/" aria-haspopup="true">
+              <a className="navlink nbtn" href="/v1/" aria-haspopup="true">
                 {'For Jobseekers '}
                 <svg
                   className="chev"
@@ -1009,9 +1009,9 @@ Page.template = (v) => (
         >
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
             <nav className="accrumb rise d1" aria-label="Breadcrumb">
-              <a href="/">{'Home'}</a>
+              <a href="/v1/">{'Home'}</a>
               <span aria-hidden="true">{'/'}</span>
-              <a href="/">{'For Jobseekers'}</a>
+              <a href="/v1/">{'For Jobseekers'}</a>
               <span aria-hidden="true">{'/'}</span>
               <b>{'Jobseeker Academy'}</b>
             </nav>

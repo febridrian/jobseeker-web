@@ -1,15 +1,186 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jobseeker Company — Homepage</title>
+    <meta name="description" content="Pilih versi homepage Jobseeker Company yang ingin dilihat.">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+    <style>
+      :root {
+        --navy: #050774;
+        --navy-hover: #040668;
+        --pink: #cd0071;
+        --ink: #181d27;
+        --muted: #535862;
+        --line: #e9eaeb;
+        --soft: #f2f3f8;
+        --bg: #fafafa;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(900px 480px at 85% -10%, rgba(205, 0, 113, .08), transparent 70%),
+          radial-gradient(900px 520px at 0% 110%, rgba(5, 7, 116, .08), transparent 70%),
+          var(--bg);
+        -webkit-font-smoothing: antialiased;
+      }
+      .page {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 48px 32px 56px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+      }
+      .logo { display: block; align-self: flex-start; height: 40px; width: auto; }
+      .intro { display: flex; flex-direction: column; gap: 14px; max-width: 640px; }
+      .eyebrow {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        color: var(--pink);
+      }
+      h1 {
+        margin: 0;
+        font-size: 48px;
+        line-height: 1.1;
+        font-weight: 700;
+        letter-spacing: -.03em;
+        color: var(--navy);
+      }
+      .lede { margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted); }
+      .choices {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 24px;
+        background: #fff;
+        color: var(--ink);
+        text-decoration: none;
+        box-shadow: 0 0 0 1px var(--line), 0 24px 48px -32px rgba(10, 13, 18, .35);
+        overflow: hidden;
+        transition: transform .3s cubic-bezier(.2, .8, .2, 1), box-shadow .3s ease;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 0 1px #cdcde3, 0 32px 56px -28px rgba(5, 7, 116, .4);
+      }
+      .card:focus-visible { outline: 3px solid var(--pink); outline-offset: 4px; }
+      .shot {
+        aspect-ratio: 16 / 10;
+        background: var(--soft);
+        border-bottom: 1px solid var(--line);
+        overflow: hidden;
+      }
+      .shot img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        transition: transform .6s cubic-bezier(.2, .8, .2, 1);
+      }
+      .card:hover .shot img { transform: scale(1.03); }
+      .body { display: flex; flex-direction: column; gap: 10px; padding: 24px 28px 28px; }
+      .tag {
+        align-self: flex-start;
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 700;
+        background: var(--soft);
+        color: var(--navy);
+      }
+      .card.v2 .tag { background: #fef2f9; color: #b8006a; }
+      .title { margin: 0; font-size: 24px; line-height: 1.25; font-weight: 700; letter-spacing: -.02em; }
+      .desc { margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); }
+      .go {
+        margin-top: 8px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        align-self: flex-start;
+        min-height: 48px;
+        padding: 0 22px;
+        border-radius: 12px;
+        background: var(--navy);
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+        transition: background .25s ease;
+      }
+      .card:hover .go { background: var(--navy-hover); }
+      .go svg { transition: transform .25s cubic-bezier(.2, .8, .2, 1); }
+      .card:hover .go svg { transform: translateX(4px); }
+      footer { margin-top: auto; font-size: 13px; color: #717680; }
+      @media (max-width: 760px) {
+        .page { padding: 32px 16px 40px; gap: 32px; }
+        h1 { font-size: 34px; }
+        .lede { font-size: 16px; }
+        .choices { grid-template-columns: minmax(0, 1fr); }
+        .body { padding: 20px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .card, .shot img, .go svg { transition: none; }
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/pages/Main/main.jsx"></script>
+    <main class="page">
+      <img class="logo" src="/images/1976305d6893a6ac268c4f73d828678d.png" alt="Jobseeker Company">
+
+      <div class="intro">
+        <p class="eyebrow">Homepage redesign</p>
+        <h1>Jobseeker Company — Homepage</h1>
+        <p class="lede">Ada dua versi desain homepage. Pilih salah satu untuk melihat website lengkapnya.</p>
+      </div>
+
+      <div class="choices">
+        <a class="card v1" href="/v1/">
+          <div class="shot">
+            <img src="/previews/v1.webp" alt="Pratinjau homepage Versi #1" width="1440" height="900">
+          </div>
+          <div class="body">
+            <span class="tag">Versi #1</span>
+            <p class="title">End-to-end workforce solutions</p>
+            <p class="desc">Homepage dengan ekosistem Hire · Manage · Grow, Agent Ming, studi kasus klien, dan semua halaman Solutions, For Jobseekers, Resources serta About.</p>
+            <span class="go">Lihat Versi #1
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </a>
+
+        <a class="card v2" href="/v2/">
+          <div class="shot">
+            <img src="/previews/v2.webp" alt="Pratinjau homepage Versi #2" width="1440" height="900">
+          </div>
+          <div class="body">
+            <span class="tag">Versi #2</span>
+            <p class="title">Hire smarter with AI</p>
+            <p class="desc">Konsep kedua yang dibangun dengan Jobseeker Design System: cerita kota interaktif, Agent Ming, serta halaman Solutions, Careers, About dan Contact.</p>
+            <span class="go">Lihat Versi #2
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <footer>© 2026 Jobseeker Company</footer>
+    </main>
   </body>
 </html>

@@ -35,7 +35,7 @@ const kebab = (s) =>
   s.replace(/([a-z0-9])([A-Z])/g, '$1-$2').replace(/([A-Z]+)([A-Z][a-z])/g, '$1-$2').toLowerCase();
 
 function routeFor(name) {
-  if (name === 'Main') return '/';
+  if (name === 'Main') return '/v1/'; // `/` is the version picker (index.html)
   const m = name.match(/^(.*?)2$/);
   if (m) return m[1] === 'Home' ? '/v2/' : `/v2/${kebab(m[1])}/`;
   return `/${kebab(name)}/`;

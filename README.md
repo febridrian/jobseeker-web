@@ -11,8 +11,11 @@ npm run build    # static site in dist/
 
 ## Pages
 
-`src/routes.json` lists every page and its URL. The home page is `/`, and the other
-pages use the artboard name in kebab case (`/hrms/`, `/pricing/`, `/blog-post/`, …).
+`/` is a version picker (`index.html`, written by hand) that links to the two homepages:
+Versi #1 at `/v1/` and Versi #2 at `/v2/`.
+
+`src/routes.json` lists every page and its URL. Version 1's other pages use the artboard
+name in kebab case (`/hrms/`, `/pricing/`, `/blog-post/`, …).
 The "concept 2" artboards, built with the Jobseeker design system, are under `/v2/`
 (`/v2/`, `/v2/careers/`, `/v2/contact/`, …).
 
