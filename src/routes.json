@@ -1,0 +1,217 @@
+[
+  {
+    "name": "Main",
+    "route": "/",
+    "title": "Home"
+  },
+  {
+    "name": "HRMS",
+    "route": "/hrms/",
+    "title": "Solutions — HRMS"
+  },
+  {
+    "name": "Partners",
+    "route": "/partners/",
+    "title": "Solutions — Jobseeker Partners"
+  },
+  {
+    "name": "Talent",
+    "route": "/talent/",
+    "title": "Solutions — Talent Augmentation"
+  },
+  {
+    "name": "Executive",
+    "route": "/executive/",
+    "title": "Solutions — Executive Search"
+  },
+  {
+    "name": "Training",
+    "route": "/training/",
+    "title": "Solutions — Corporate Training"
+  },
+  {
+    "name": "Solutions",
+    "route": "/solutions/",
+    "title": "Solutions — See all"
+  },
+  {
+    "name": "App",
+    "route": "/app/",
+    "title": "For Jobseekers — Jobseeker App"
+  },
+  {
+    "name": "Academy",
+    "route": "/academy/",
+    "title": "For Jobseekers — Jobseeker Academy"
+  },
+  {
+    "name": "Hub",
+    "route": "/hub/",
+    "title": "For Jobseekers — See all"
+  },
+  {
+    "name": "Customers",
+    "route": "/customers/",
+    "title": "Customers"
+  },
+  {
+    "name": "Blog",
+    "route": "/blog/",
+    "title": "Resources — Blog"
+  },
+  {
+    "name": "Story",
+    "route": "/story/",
+    "title": "About — Our story"
+  },
+  {
+    "name": "Leadership",
+    "route": "/leadership/",
+    "title": "About — Leadership"
+  },
+  {
+    "name": "Demo",
+    "route": "/demo/",
+    "title": "Request a demo"
+  },
+  {
+    "name": "Glossary",
+    "route": "/glossary/",
+    "title": "Resources — Glossary"
+  },
+  {
+    "name": "BlogPost",
+    "route": "/blog-post/",
+    "title": "Resources — Blog detail"
+  },
+  {
+    "name": "About",
+    "route": "/about/",
+    "title": "About — See all"
+  },
+  {
+    "name": "Press",
+    "route": "/press/",
+    "title": "About — Press & Media"
+  },
+  {
+    "name": "PartnerProgram",
+    "route": "/partner-program/",
+    "title": "About — Partner Program"
+  },
+  {
+    "name": "Privacy",
+    "route": "/privacy/",
+    "title": "Legal — Privacy Policy"
+  },
+  {
+    "name": "Terms",
+    "route": "/terms/",
+    "title": "Legal — Terms and Conditions"
+  },
+  {
+    "name": "Cookies",
+    "route": "/cookies/",
+    "title": "Legal — Cookie Policy"
+  },
+  {
+    "name": "Pricing",
+    "route": "/pricing/",
+    "title": "Pricing"
+  },
+  {
+    "name": "Guides",
+    "route": "/guides/",
+    "title": "Resources — Guides"
+  },
+  {
+    "name": "Templates",
+    "route": "/templates/",
+    "title": "Resources — Templates"
+  },
+  {
+    "name": "Events",
+    "route": "/events/",
+    "title": "Resources — Events"
+  },
+  {
+    "name": "Jobs",
+    "route": "/jobs/",
+    "title": "For Jobseekers — Latest jobs"
+  },
+  {
+    "name": "Expert",
+    "route": "/expert/",
+    "title": "Solutions — Talk to an expert"
+  },
+  {
+    "name": "Compare",
+    "route": "/compare/",
+    "title": "Solutions — Compare solutions"
+  },
+  {
+    "name": "Resources",
+    "route": "/resources/",
+    "title": "Resources — See all"
+  },
+  {
+    "name": "Home2",
+    "route": "/v2/",
+    "title": "Home — concept 2 (Jobseeker DS)"
+  },
+  {
+    "name": "Solutions2",
+    "route": "/v2/solutions/",
+    "title": "Solutions — concept 2 (Jobseeker DS)"
+  },
+  {
+    "name": "Careers2",
+    "route": "/v2/careers/",
+    "title": "Careers — concept 2 (Jobseeker DS)"
+  },
+  {
+    "name": "About2",
+    "route": "/v2/about/",
+    "title": "About us — concept 2 (Jobseeker DS)"
+  },
+  {
+    "name": "Contact2",
+    "route": "/v2/contact/",
+    "title": "Contact us — concept 2 (Jobseeker DS)"
+  },
+  {
+    "name": "Customers2",
+    "route": "/v2/customers/",
+    "title": "Customers — concept 2 (Jobseeker DS)"
+  },
+  {
+    "name": "Software2",
+    "route": "/v2/software/",
+    "title": "Jobseeker Software — concept 2 (Jobseeker DS)"
+  },
+  {
+    "name": "Talent2",
+    "route": "/v2/talent/",
+    "title": "Talent Augmentation — concept 2 (Jobseeker DS)"
+  },
+  {
+    "name": "Partners2",
+    "route": "/v2/partners/",
+    "title": "Jobseeker Partners — concept 2 (Jobseeker DS)"
+  },
+  {
+    "name": "Executive2",
+    "route": "/v2/executive/",
+    "title": "Executive Search — concept 2 (Jobseeker DS)"
+  },
+  {
+    "name": "Academy2",
+    "route": "/v2/academy/",
+    "title": "Jobseeker Academy — concept 2 (Jobseeker DS)"
+  },
+  {
+    "name": "App2",
+    "route": "/v2/app/",
+    "title": "Jobseeker App (Looking for a job?) — concept 2 (Jobseeker DS)"
+  }
+]
